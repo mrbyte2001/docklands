@@ -4,8 +4,18 @@
     <!-- Enable features -->
     <featureManager>
         <feature>javaee-8.0</feature>
-        <feature>mpMetrics-1.0</feature>        
+        <feature>mpMetrics-1.1</feature>        
     </featureManager>
+
+    <dataSource id="DefaultDataSource" >
+        <jdbcDriver libraryRef="MyJDBCLib" javax.sql.DataSource="org.hsqldb.jdbc.JDBCDriver" />
+        <properties.derby.embedded databaseName="myDB" createDatabase="create"/>
+        <containerAuthData user="user1"  password="{xor}Oz0vKDtu" />
+    </dataSource>
+    <library id="MyJDBCLib">
+        <file name="/opt/hsqldb.jar"/>
+    </library>
+
     <!-- To allow access to this server from a remote client host="*" has been added to the following element -->
     <httpEndpoint id="defaultHttpEndpoint" host="*" httpPort="9080" httpsPort="9443" />
     

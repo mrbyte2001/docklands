@@ -1,7 +1,7 @@
-FROM airhacks/java
-LABEL maintainer="Tobias N. Sasse, @tnsasse and Adam Bien, adam-bien.com" description="OpenLiberty Kernel"
-ENV RELEASE 2017-09-27_1951
-ENV VERSION 17.0.0.3
+FROM airhacks/java8
+LABEL maintainer="Tobias N. Sasse, @tnsasse and Adam Bien, adam-bien.com and Dirk Dreyer-Hochstein, @mrbyte2001" description="OpenLiberty Kernel"
+ENV RELEASE 2018-03-09_2209
+ENV VERSION 18.0.0.1
 ENV INSTALL_DIR /opt/ibm
 
 # Download OpenLiberty

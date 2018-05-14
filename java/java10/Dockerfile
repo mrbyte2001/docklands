@@ -1,4 +1,4 @@
-FROM centos:7
+FROM airhacks/centos
 MAINTAINER Adam Bien, adam-bien.com
 RUN yum update -y \
   && mkdir /usr/lib/jvm/ \    
